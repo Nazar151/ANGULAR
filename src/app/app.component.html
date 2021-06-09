@@ -1,2 +1,9 @@
 <div>{{greeting}}</div>
-<app-users></app-users>
+<!--<app-users></app-users>-->
+<ul>
+  <li><a routerLink="home">home</a></li>
+  <li><a routerLink="users">users</a></li>
+  <li><a [routerLink]="['posts']">posts</a></li>
+  <li><a routerLink="comments" >comment</a></li>
+</ul>
+<router-outlet></router-outlet>
